@@ -10,3 +10,8 @@ git push -u origin master
 git remote add origin https://github.com/aryanzyraj/Gainode.git
 git branch -M master
 git push -u origin master
+git
+
+git remote set-url origin git@github.com:aryanzyraj/Gainode.git
+
+ssh-keygen -t github -C "aryanzyraj@gmail.com"
