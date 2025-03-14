@@ -68,8 +68,6 @@ check_system_type() {
 }
 
 # Function to install CUDA Toolkit 12.8 in WSL or Ubuntu 24.04
-# ...existing code...
-
 install_cuda() {
     if command -v nvcc &> /dev/null; then
         echo "✅ CUDA is already installed. Skipping CUDA installation."
@@ -119,8 +117,6 @@ install_cuda() {
     echo "✅ CUDA Toolkit 12.8 installed successfully."
     setup_cuda_env
 }
-
-# ...existing code...
 
 # Set up CUDA environment variables
 setup_cuda_env() {
@@ -204,20 +200,20 @@ SYSTEM_TYPE=$?  # Capture the return value of check_system_type
 
 if [[ $SYSTEM_TYPE -eq 0 ]]; then
     # VPS
-    CONFIG_URL="https://raw.githubusercontent.com/abhiag/Gaia_Node/main/config2.json"
+    CONFIG_URL="https://raw.githubusercontent.com/aryanzyraj/Gainode/main/config2.json"
 elif [[ $SYSTEM_TYPE -eq 1 ]]; then
     # Laptop
     if ! check_nvidia_gpu; then
-        CONFIG_URL="https://raw.githubusercontent.com/abhiag/Gaia_Node/main/config2.json"
+        CONFIG_URL="https://raw.githubusercontent.com/aryanzyraj/Gainode/main/config2.json"
     else
-        CONFIG_URL="https://raw.githubusercontent.com/abhiag/Gaia_Node/main/config1.json"
+        CONFIG_URL="https://raw.githubusercontent.com/aryanzyraj/Gainode/main/config1.json"
     fi
 elif [[ $SYSTEM_TYPE -eq 2 ]]; then
     # Desktop
     if ! check_nvidia_gpu; then
-        CONFIG_URL="https://raw.githubusercontent.com/abhiag/Gaia_Node/main/config2.json"
+        CONFIG_URL="https://raw.githubusercontent.com/aryanzyraj/Gainode/config2.json"
     else
-        CONFIG_URL="https://raw.githubusercontent.com/abhiag/Gaia_Node/main/config3.json"
+        CONFIG_URL="https://raw.githubusercontent.com/aryanzyraj/Gainode/main/config3.json"
     fi
 fi
 
@@ -235,6 +231,6 @@ echo "🔍 Fetching GaiaNet node information..."
 # Closing message
 echo "==========================================================="
 echo "🎉 Congratulations! Your GaiaNet node is successfully set up!"
-echo "🌟 Stay connected: Telegram: https://t.me/GaCryptOfficial | Twitter: https://x.com/GACryptoO"
+echo "🌟 Stay connected: Telegram: https://t.me/localhostserver | Twitter: https://x.com/aryanyzraj"
 echo "💪 Together, let's build the future of decentralized networks!"
 echo "===========================================================" 
