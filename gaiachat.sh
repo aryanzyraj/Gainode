@@ -41,8 +41,8 @@ set_api_url() {
     elif [ "$system_type" -eq 1 ]; then
         # Laptop
         if [ "$cuda_present" -eq 0 ]; then
-            API_URL="https://soneium.gaia.domains/v1/chat/completions"
-            API_NAME="Soneium"
+            API_URL="https://flip.gaia.domains/v1/chat/completions"
+            API_NAME="Flip"
         else
             API_URL="https://hyper.gaia.domains/v1/chat/completions"
             API_NAME="Hyper"
@@ -173,7 +173,7 @@ general_questions=(
     "What is the purpose of the United Nations?"
     "How does a compass work to show direction?"
 )
-    elif [[ "$API_URL" == "https://soneium.gaia.domains/v1/chat/completions" ]]; then
+    elif [[ "$API_URL" == "https://flip.gaia.domains/v1/chat/completions" ]]; then
   general_questions=(
     "What do you wear on your head when riding a bike?"
     "Which is the smallest country in the world by land area?"
@@ -277,8 +277,8 @@ EOF
     if [[ "$API_URL" == "https://hyper.gaia.domains/v1/chat/completions" ]]; then
         echo "⏳ Fetching (hyper API)..."
         sleep 1
-    elif [[ "$API_URL" == "https://soneium.gaia.domains/v1/chat/completions" ]]; then
-        echo "⏳ Fetching (soneium API)..."
+    elif [[ "$API_URL" == "https://flip.gaia.domains/v1/chat/completions" ]]; then
+        echo "⏳ Fetching (Flip API)..."
         sleep 2
     elif [[ "$API_URL" == "https://gadao.gaia.domains/v1/chat/completions" ]]; then
         echo "⏳ Fetching..."
