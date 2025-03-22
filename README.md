@@ -9,7 +9,7 @@ git push -u origin main
 …or push an existing repository from the command line
 git remote add origin https://github.com/aryanzyraj/Gainode.git
 git branch -M main
-git push -u origin master
+git push -u origin main
 git
 
 git remote set-url origin git@github.com:aryanzyraj/Gainode.git
