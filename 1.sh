@@ -15,7 +15,7 @@ printf "\n\n"
 
 ##########################################################################################
 #                                                                                        
-#                🚀 THIS SCRIPT IS PROUDLY CREATED BY **GA CRYPTO**! 🚀                 
+#                🚀 THIS SCRIPT IS PROUDLY CREATED BY **Aryan RAj**! 🚀                 
 #                                                                                        
 #   🌐 Join our revolution in decentralized networks and crypto innovation!               
 #                                                                                        
